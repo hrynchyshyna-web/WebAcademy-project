@@ -4,52 +4,78 @@
     <meta charset="UTF-8">
     <title>Test</title>
     <style>
-        .letter {
-            color: white;
-        }
         table {
             border: 1px solid black;
-            order-style: none;
             font-variant:all-petite-caps;
-            word-wrap:pre-line;
-            text-indent: 0px;
+            word-wrap:break-word;
+            text-indent: 1px;
             text-align:center;
             /*border-color: transparent;*/
             border-collapse: collapse;
             border-style: hidden;
             margin: auto;
-            font-size: 3em;
+            font-size: 2em;
+            font-weight: lighter;
         }
+        #col1 {
+                width: 9px;
+                height: 9px;
+                background: #daa520;
+            }
+        #col2 {
+            width: 21px;
+            height: 9px;
+            background: red;
+        }
+        #col3 {
+            width: 9px;
+            height: 16px;
+            background: #a52a2a;
+            color: white;
+        }
+        #col4 {
+            width: 13px;
+            height: 16px;
+            background: #daa520;
+        }
+        #col5 {
+            width: 8px;
+            height: 21px;
+            background: black;
+            color: white;
+        }
+        #col6 {
+            width: 22px;
+            height: 5px;
+            background: #daa520;
+        }
+
+
 
     </style>
 </head>
 <body>
-    <table border="1" bordecolor="black" cellpadding="30" cellspacing="0"> <!--тег для создания таблици-->
+    <table border="1" cellpadding="30" cellspacing="0"> <!--тег для создания таблици-->
         <tbody>  <!--определяет тело таблици-->
-           <tr>
-                <td bgcolor="#daa520" bordercolor="#daa520" width="9" height="9">Logo
-                </td>
-
-
-               <td bgcolor="red" colspan="2" bordercolor="red" width="21" height="9" color="white">Menu
-                </td>
-            </tr>
-        <tr>
-            <td class="letter" bgcolor="#a52a2a" bordercolor="#a52a2a" width="9" height="21">News feed
+         <tr>
+            <td id='col1'> Logo
             </td>
-            <td bgcolor="#daa520" bordercolor="#daa520" width="13" height="16">List of some things
-            </td>
-            <td class="letter" bgcolor="black" rowspan="2" bordercolor="black" width="8" height="21">Navigation Bar
+            <td id='col2' colspan="2"> Menu
             </td>
         </tr>
-        <tr>
-            <td bgcolor="#daa520" colspan="2" bordercolor="#daa520" width="22" height="5">Footer
+         <tr>
+            <td id='col3'> News feed
+            </td>
+            <td id='col4' > List of some things
+            </td>
+            <td id='col5' rowspan="2"> Navi- gat ion Bar
             </td>
         </tr>
+         <tr>
+            <td id='col6' colspan="2">Footer
+            </td>
+         </tr>
         </tbody>
-
-
-
     </table>
 </body>
 </html>
